@@ -1,14 +1,16 @@
 import axios from "axios";
 
 const API_KEY= process.env.REACT_APP_API_KEY;
+//console.log("aaa",API_KEY);
 
-const api = axis.create({
+const api = axios.create({
     baseURL:"https://api.themoviedb.org/3",
     headers: {
         Accept: 'application/json',
         Authorization: `Bearer ${API_KEY}`
       }
 })
+
 
 // 요청 인터셉터 추가하기
 axios.interceptors.request.use(function (config) {
