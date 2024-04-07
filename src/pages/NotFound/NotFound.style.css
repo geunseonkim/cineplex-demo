@@ -1,0 +1,21 @@
+.NotFound-num {
+    position: absolute;
+    right: 180px;
+    top: 190px;
+    color: rgba(255, 255, 255, 0.928);
+    opacity: 0.9;
+    font-size: 200px;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.NotFound-explain {
+    position: absolute;
+    right: 130px;
+    top: 430px;
+    color: rgba(32, 68, 178, 0.928);
+    font-size: 35px;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
