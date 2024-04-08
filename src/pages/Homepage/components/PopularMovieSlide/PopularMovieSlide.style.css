@@ -1,0 +1,17 @@
+.carousel-container {
+    overflow: hidden;
+    height: 440px;
+}
+.popularMovie-title {
+    padding-left: 2rem;
+}
+
+@media screen and (max-width:767px){
+    .popularMovie-title {
+        margin-top: -2.8rem;
+        position: absolute;
+    }
+    .carousel-container {
+        height: 350px;
+    }
+}

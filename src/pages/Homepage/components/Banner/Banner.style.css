@@ -23,3 +23,23 @@
 .banner-text-area > *{
     z-index: 2;
 }
+
+@media screen and (max-width:767px){
+    .banner {
+        height: 40vh;
+        margin-top: -2.8rem;
+    }
+    .banner:before {
+        height: 40vh;
+    }
+    .banner-text-area {
+        margin-top: 3rem;
+        width: 80%;
+        height: 80%;
+        font-size: 0.8rem;
+        overflow: hidden;
+    }
+    .banner-text-area h1 {width: 80%;
+        font-size: 1.6rem;
+    }
+}
