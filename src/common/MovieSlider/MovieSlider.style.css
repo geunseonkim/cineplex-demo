@@ -2,8 +2,12 @@
     overflow: hidden;
     height: 440px;
 }
-.popularMovie-title {
+.each-movie-title {
     padding-left: 2rem;
+    cursor: pointer;
+}
+.each-movie-title:hover {
+    color: rgb(0, 247, 255);
 }
 
 @media screen and (max-width:767px){
@@ -12,6 +16,7 @@
         position: absolute;
     }
     .carousel-container {
-        height: 350px;
+        height: 300px;
+        margin-bottom: 5rem;
     }
 }

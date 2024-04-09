@@ -19,6 +19,7 @@
     justify-content: center;
     height: 100%;
     padding: 2rem;
+    cursor: pointer;
 }
 .banner-text-area > *{
     z-index: 2;
@@ -41,5 +42,6 @@
     }
     .banner-text-area h1 {width: 80%;
         font-size: 1.6rem;
+        margin-bottom: 1rem;
     }
 }
