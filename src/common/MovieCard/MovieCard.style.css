@@ -4,6 +4,7 @@
     background-size: cover;
     cursor: pointer;
     transition: 0.5s;
+    border-radius: 15px;
 }
 .overlay {
     width: 100%;
@@ -15,6 +16,7 @@
     font-weight: bold;
     overflow-wrap: break-word;
     padding: 1rem;
+    border-radius: 15px;
 }
 .overlay:hover{
     opacity: 1;
@@ -34,4 +36,10 @@
         height: 17rem;
         background-position: center;
     }
+}
+
+.card-detail-adult {
+    padding-left: 1rem;
+    font-weight: 800;
+    color: rgb(249, 45, 249);
 }

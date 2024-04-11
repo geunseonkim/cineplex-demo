@@ -1,0 +1,17 @@
+.page-link {
+    z-index: 3;
+    color: white;
+    background-color: rgb(44, 44, 44);
+    border-color: rgb(44, 44, 44);
+}
+
+/* .page-item:not(:first-child) .page-link {
+    color: black;
+} */
+
+.genre-search-filter {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;;
+    color: #BF40BF;
+}

@@ -32,7 +32,7 @@ const MovieCard = ({movie}) => {
                 <div><FontAwesomeIcon icon={faStar} style={{color: "#FFDF00"}} /> {movie.vote_average}</div>
                 <div><FontAwesomeIcon icon={faFire} style={{color: "red"}} /> {movie.popularity}</div>
                 <div><FontAwesomeIcon icon={faCalendar} style={{color: "green"}} /> {movie.release_date}</div>
-                <div>{movie.adult? "over 18" : "under 18"}</div>
+                <div className='card-detail-adult'>{movie.adult? "over 18" : "under 18"}</div>
             </div>
         </div>
     </div>

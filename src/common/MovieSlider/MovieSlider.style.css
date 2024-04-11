@@ -5,6 +5,7 @@
 .each-movie-title {
     padding-left: 2rem;
     cursor: pointer;
+    color: #BF40BF;
 }
 .each-movie-title:hover {
     color: rgb(0, 247, 255);

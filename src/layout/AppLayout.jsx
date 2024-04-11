@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -14,6 +14,15 @@ const AppLayout = () => {
     const goToMovies = () => {
         navigate("movies")
     }
+
+    const [keyword, setKeyword] = useState('');
+    const searchByKeyword = (event) => {
+        event.preventDefault() // 페이지의 새로고침을 방지.
+        // url 바꿔주기.
+        navigate(`/movies?q=${keyword}`)
+        setKeyword("");
+    }
+
   return (
     <div>
         <Navbar expand="lg" style={{padding: "15px"}}>
@@ -29,12 +38,14 @@ const AppLayout = () => {
                 <Nav.Link href="#action1" style={{color: "white"}} onClick={goToHomepage}>Home</Nav.Link>
                 <Nav.Link href="#action2" style={{color: "white"}} onClick={goToMovies}>Movies</Nav.Link>  
             </Nav>
-            <Form className="d-flex">
+            <Form className="d-flex" onSubmit={searchByKeyword}>
                 <Form.Control
                 type="search"
                 placeholder="Search"
                 className="me-2"
                 aria-label="Search"
+                value={keyword}
+                onChange={(event)=>setKeyword(event.target.value)} // 엔터키 입력 o, 서치버튼 클릭 x => should figure out.
                 />
                 <Button variant="outline-light">Search</Button>
             </Form>
