@@ -1,17 +1,42 @@
-.page-link {
-    z-index: 3;
-    color: white;
-    background-color: rgb(44, 44, 44);
-    border-color: rgb(44, 44, 44);
+.pagination {
+    margin: 2rem;
+    margin-bottom: 3rem;
 }
 
-/* .page-item:not(:first-child) .page-link {
-    color: black;
-} */
+.page-link {
+    color:white !important;
+}
+.page-link:hover {
+    color:rgb(0, 247, 255) !important;
+}
+
+.page-item {
+    margin: 10px;
+    color:rgb(0, 247, 255);
+    font-weight: 900;
+}
+
+.page-item:not(:first-child) .page-link {
+    margin-left: calc(var(--bs-border-width) * -1);
+    background-color: black;
+    border-color: black;
+}
+
+.page-item:first-child .page-link {
+    border-top-left-radius: var(--bs-pagination-border-radius);
+    border-bottom-left-radius: var(--bs-pagination-border-radius);
+    background-color: black;
+    border-color: black;
+}
 
 .genre-search-filter {
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 1rem;;
-    color: #BF40BF;
+    color: rgb(0, 247, 255);
+}
+.movie-category-name:hover {
+    border-color: rgb(0, 247, 255) !important;
+    background-color: black !important;
+    color: rgb(0, 247, 255) !important;
 }

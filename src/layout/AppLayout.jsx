@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Outlet, useNavigate } from 'react-router-dom';
+import "./AppLayout.style.css"
 
 const AppLayout = () => {
     const navigate = useNavigate();
@@ -35,8 +36,8 @@ const AppLayout = () => {
                 style={{ maxHeight: '100px' }}
                 navbarScroll
             >
-                <Nav.Link href="#action1" style={{color: "white"}} onClick={goToHomepage}>Home</Nav.Link>
-                <Nav.Link href="#action2" style={{color: "white"}} onClick={goToMovies}>Movies</Nav.Link>  
+                <Nav.Link href="#action1" style={{color: "white"}} onClick={goToHomepage} className='banner-name'>Home</Nav.Link>
+                <Nav.Link href="#action2" style={{color: "white"}} onClick={goToMovies} className='banner-name'>Movies</Nav.Link>  
             </Nav>
             <Form className="d-flex" onSubmit={searchByKeyword}>
                 <Form.Control
@@ -47,7 +48,7 @@ const AppLayout = () => {
                 value={keyword}
                 onChange={(event)=>setKeyword(event.target.value)} // 엔터키 입력 o, 서치버튼 클릭 x => should figure out.
                 />
-                <Button variant="outline-light">Search</Button>
+                <Button variant="outline-light" className='banner-search'>Search</Button>
             </Form>
             </Navbar.Collapse>
         </Container>

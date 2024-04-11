@@ -1,0 +1,8 @@
+.banner-name:hover {
+    color: rgb(0, 247, 255)!important;
+}
+.banner-search:hover {
+    color: #FFBF00 !important;
+    background-color: black !important;
+    border-color: #FFBF00 !important;
+}

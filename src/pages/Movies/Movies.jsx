@@ -33,7 +33,7 @@ const Movies = () => {
   console.log("aaa", data);
 
   return (
-    <Container style={{marginTop: "2rem"}}>
+    <Container style={{marginTop: "2.5rem"}}>
       <Row>
         <Col lg={4} xs={12}>
         
@@ -48,7 +48,7 @@ const Movies = () => {
             />
           </Col>
           <Col xs="auto">
-            <Button type="submit" style={{backgroundColor: "#BF40BF", borderColor: "white"}}>click</Button>
+            <Button type="submit" variant="outline-light" className='movie-category-name'>click</Button>
           </Col>
         </Row>
       </Form>
