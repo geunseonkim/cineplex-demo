@@ -2,26 +2,22 @@
     margin: 2rem;
     margin-bottom: 3rem;
 }
-
 .page-link {
     color:white !important;
 }
 .page-link:hover {
     color:rgb(0, 247, 255) !important;
 }
-
 .page-item {
     margin: 10px;
     color:rgb(0, 247, 255);
     font-weight: 900;
 }
-
 .page-item:not(:first-child) .page-link {
     margin-left: calc(var(--bs-border-width) * -1);
     background-color: black;
     border-color: black;
 }
-
 .page-item:first-child .page-link {
     border-top-left-radius: var(--bs-pagination-border-radius);
     border-bottom-left-radius: var(--bs-pagination-border-radius);
@@ -29,7 +25,7 @@
     border-color: black;
 }
 
-.genre-search-filter {
+.category-search-title {
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 1rem;;
@@ -39,4 +35,19 @@
     border-color: rgb(0, 247, 255) !important;
     background-color: black !important;
     color: rgb(0, 247, 255) !important;
+}
+
+@media screen and (max-width:950px){
+    .category-form {
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }
+    .col-12 {
+        flex: 0 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

@@ -5,10 +5,10 @@
 .each-movie-title {
     padding-left: 2rem;
     cursor: pointer;
-    color: rgb(0, 247, 255);
+    color: white;
 }
 .each-movie-title:hover {
-    color: white;
+    color: rgb(0, 247, 255);
 }
 
 @media screen and (max-width:767px){

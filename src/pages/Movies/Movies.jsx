@@ -36,29 +36,26 @@ const Movies = () => {
     <Container style={{marginTop: "2.5rem"}}>
       <Row>
         <Col lg={4} xs={12}>
-        
-        <Form inline>
-          <div className='genre-search-filter'>Category</div>
-        <Row>
-          <Col xs="auto">
-            <Form.Control
-              type="text"
-              placeholder="Search"
-              className=" mr-sm-2"
-            />
-          </Col>
-          <Col xs="auto">
-            <Button type="submit" variant="outline-light" className='movie-category-name'>click</Button>
-          </Col>
-        </Row>
-      </Form>
-
-
-
-
+          <Form className='category-form'>
+            <div className='category-search-title'>Category</div>
+            <Row className='category-search'>
+              <Col xs="auto">
+                <Form.Control
+                  type="text"
+                  placeholder="Search"
+                  className=" mr-sm-2"
+                />
+              </Col>
+              <Col xs="auto">
+                <Button type="submit" variant="outline-light" className='movie-category-name'>click</Button>
+              </Col>
+            </Row>
+          </Form>
         </Col>
+
+        {/* pagination */}
         <Col lg={8} xs={12}>
-          <Row>
+          <Row className='movie-list'>
           {data?.results.map((movie,idx)=><Col key={idx} lg={4} xs={12} style={{marginBottom: "2rem"}}><MovieCard movie={movie}/></Col>)}
           </Row>
           <ReactPaginate
