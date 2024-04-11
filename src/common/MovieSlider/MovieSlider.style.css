@@ -18,6 +18,9 @@
     }
     .carousel-container {
         height: 300px;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
+    }
+    .each-movie-title {
+        font-size: 1.3rem;
     }
 }
