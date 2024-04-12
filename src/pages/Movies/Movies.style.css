@@ -25,16 +25,23 @@
     border-color: black;
 }
 
-.category-search-title {
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;;
-    color: rgb(0, 247, 255);
+.category-button-name {
+    width: 90%;
+    border-color: white !important;
+    color: white !important;
+    font-weight: 900 !important;
+    margin-bottom: 1rem;
 }
-.movie-category-name:hover {
-    border-color: rgb(0, 247, 255) !important;
-    background-color: black !important;
-    color: rgb(0, 247, 255) !important;
+.category-button-name:hover {
+    border-color: #FFBF00 !important;
+    background-color: #FFBF00 !important;
+    color: black !important;
+    font-weight: 900;
+}
+
+.category-name {
+    margin: 1.5rem 0rem;
+    color: #FFBF00;
 }
 
 @media screen and (max-width:950px){

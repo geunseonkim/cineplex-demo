@@ -36,21 +36,12 @@ const Movies = () => {
     <Container style={{marginTop: "2.5rem"}}>
       <Row>
         <Col lg={4} xs={12}>
-          <Form className='category-form'>
-            <div className='category-search-title'>Category</div>
-            <Row className='category-search'>
-              <Col xs="auto">
-                <Form.Control
-                  type="text"
-                  placeholder="Search"
-                  className=" mr-sm-2"
-                />
-              </Col>
-              <Col xs="auto">
-                <Button type="submit" variant="outline-light" className='movie-category-name'>click</Button>
-              </Col>
-            </Row>
-          </Form>
+        <h4 className='category-name'>More to explore</h4>
+          <Button variant="outline-light" className='category-button-name'>Most Popular Movies</Button>
+          <Button variant="outline-light" className='category-button-name'>The Latest Movies</Button>
+
+          <h4 className='category-name'>Top Rated Movies by Genre &#62;</h4>
+          <div> Space for genre</div>
         </Col>
 
         {/* pagination */}
