@@ -1,4 +1,4 @@
-Button {
+.movie-detail-info-all Button {
     background-color: #FFBF00 !important;
     border-color: #FFBF00 !important;
     border-radius: 40px;
@@ -6,7 +6,8 @@ Button {
     color: black !important;
     font-weight: 600 !important;
     width: 20%;
-    padding-right: 5rem;
+
+    text-align: center;
 }
 .movie-detail-info-all {
     margin-bottom: 1rem;

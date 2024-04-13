@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MovieDetailCredits = () => {
+const RelatedMovies = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const MovieDetailCredits = () => {
   )
 }
 
-export default MovieDetailCredits
+export default RelatedMovies
