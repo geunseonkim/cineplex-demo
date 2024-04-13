@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useSearchMovieQuery } from '../../hooks/useSearchMovie'
 import { useSearchParams } from 'react-router-dom'
 import MovieCard from '../../common/MovieCard/MovieCard'
@@ -48,6 +48,7 @@ const Movies = () => {
     console.log("lll", handleLatestResult); 
     setMovieGenre(handleLatestResult);
   }
+    useEffect(()=>{},[movieGenre])
 
   if(isLoading) {return <h1>Loading ...</h1>}
   if(isError) {return <Alert variant="danger">{error.message}</Alert>}
@@ -62,7 +63,6 @@ const Movies = () => {
       default:
     }
   }
-
   const handleLatest = () => {
     const value = "The Latest Movies"
     switch (value) {
@@ -71,7 +71,6 @@ const Movies = () => {
       default:
     }
   }
-
 
   return (
     <Container style={{marginTop: "2.5rem"}}>
