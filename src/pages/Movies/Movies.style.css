@@ -29,19 +29,33 @@
     width: 90%;
     border-color: white !important;
     color: white !important;
-    font-weight: 900 !important;
+    font-weight: 800 !important;
     margin-bottom: 1rem;
 }
 .category-button-name:hover {
     border-color: #FFBF00 !important;
     background-color: #FFBF00 !important;
     color: black !important;
-    font-weight: 900;
 }
 
 .category-name {
     margin: 1.5rem 0rem;
     color: #FFBF00;
+    font-weight: 900;
+}
+
+.movie-genreList {
+    margin: 0.3rem;
+    font-size: 0.9rem !important;
+    /* background-color: white !important; */
+    border-color: black !important;
+    /* color: black !important; */
+    font-weight: 600 !important;
+    padding: 0.3rem !important;
+}
+.movie-genreList:hover {
+    background-color: #FFBF00 !important;
+    border-color: #FFBF00 !important;
 }
 
 @media screen and (max-width:950px){
@@ -56,5 +70,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .category-button-name {
+        width: 60%;
     }
 }
