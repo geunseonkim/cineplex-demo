@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar, faFire } from '@fortawesome/free-solid-svg-icons'
 import { faCalendar } from '@fortawesome/free-regular-svg-icons'
 import { useMovieGenreQuery } from '../../hooks/useMovieGenre'
+import { useNavigate } from 'react-router-dom';
 
 const MovieCard = ({movie}) => {
 
@@ -17,14 +18,19 @@ const MovieCard = ({movie}) => {
       const genreObj = genreData.find((genre)=>genre.id === id)
       return genreObj.name;
     })
-
     return genreNameList
+  }
+
+  const navigate = useNavigate();
+  const MovieDetail = (id) => {
+    // url 바꿔주기.
+    navigate(`/movies/${id}`)
   }
 
   return (
     <div
     style={{backgroundImage: "url("+`https://themoviedb.org/t/p/w600_and_h900_bestv2${movie.poster_path}`+")"}}
-    className='movie-card'>
+    className='movie-card' onClick={()=>MovieDetail(movie?.id)}>
         <div className='overlay'>
             <h3>{movie.title}</h3>
             {showGenre(movie.genre_ids).map((id,idx)=>(<Badge style={{margin: "0.1rem"}} bg="light" text="dark" key={idx}>{id}</Badge>))}
