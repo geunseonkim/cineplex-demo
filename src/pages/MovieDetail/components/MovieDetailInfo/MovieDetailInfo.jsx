@@ -5,6 +5,7 @@ import { faStar, faFire } from '@fortawesome/free-solid-svg-icons'
 // import { faCalendar } from '@fortawesome/free-regular-svg-icons'
 import "./MovieDetailInfo.style.css"
 import {Button} from 'react-bootstrap';
+import Trailer from '../Trailer/Trailer';
 
 const MovieDetailInfo = ({movie, id}) => {
   return (
@@ -48,7 +49,7 @@ const MovieDetailInfo = ({movie, id}) => {
             </div>
             <p style={{border: "1px solid black", borderColor: "white"}}></p>
           </div>
-          <Button className='trailer-button'>Trailer</Button>
+          <Trailer/>
           </Col>
         </Row>
       </Container>
