@@ -1,0 +1,24 @@
+.reviewer {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.reviewer h4 {
+    color: #FFBF00;
+}
+.reviewer-box.more {
+    max-height: none;
+}
+.reviewer-box.fold {
+    max-height: 100px;
+    overflow: hidden;
+}
+.reviewer button {
+    border: none;
+    background-color: black;
+    color: #FFBF00;
+    font-weight: 900;
+    cursor: pointer;
+}
+.reviewer button:hover {
+    color:aqua;
+}

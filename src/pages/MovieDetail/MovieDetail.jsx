@@ -1,6 +1,6 @@
 import React from 'react'
 import { useMovieDetailQuery } from '../../hooks/useMovieDetail';
-import { Alert, Container, Row, Col} from 'react-bootstrap';
+import { Alert} from 'react-bootstrap';
 import { useParams } from 'react-router-dom'
 import MovieDetailInfo from './components/MovieDetailInfo/MovieDetailInfo';
 import MovieDetailMoreInfo from './components/MovieDetailMoreInfo/MovieDetailMoreInfo';

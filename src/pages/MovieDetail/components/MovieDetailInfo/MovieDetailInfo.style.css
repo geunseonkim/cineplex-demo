@@ -12,3 +12,9 @@
 .movie-detail-info-all {
     margin-bottom: 1rem;
 }
+
+@media screen and (max-width:767px){
+    .detail-page-genre {
+        margin-top: 1.5rem;
+    }
+}

@@ -17,7 +17,7 @@ const MovieDetailInfo = ({movie, id}) => {
 
           <Col lg={6}>
           <div>
-          {movie?.genres.map((id,idx)=>(<Badge style={{margin: "0.1rem"}} bg="light" text="dark" key={idx}>{id.name}</Badge>))}
+          <div className='detail-page-genre'>{movie?.genres.map((id,idx)=>(<Badge style={{margin: "0.1rem"}} bg="light" text="dark" key={idx}>{id.name}</Badge>))}</div>
             <h1 style={{marginTop: "1rem"}}>{movie?.title}</h1>
             <div className='movie-card-info'>
                 <span><FontAwesomeIcon icon={faStar} style={{color: "#FFDF00"}} /> {movie?.vote_average} </span>
