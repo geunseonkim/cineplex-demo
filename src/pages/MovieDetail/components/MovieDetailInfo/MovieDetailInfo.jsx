@@ -17,14 +17,14 @@ const MovieDetailInfo = ({movie, id}) => {
 
           <Col lg={6}>
           <div>
-          <div className='detail-page-genre'>{movie?.genres.map((id,idx)=>(<Badge style={{margin: "0.1rem"}} bg="light" text="dark" key={idx}>{id.name}</Badge>))}</div>
-            <h1 style={{marginTop: "1rem"}}>{movie?.title}</h1>
-            <div className='movie-card-info'>
-                <span><FontAwesomeIcon icon={faStar} style={{color: "#FFDF00"}} /> {movie?.vote_average} </span>
-                <span><FontAwesomeIcon icon={faFire} style={{color: "red"}} /> {movie?.popularity}</span>
-                <span className='card-detail-adult'>{movie?.adult? "over 18" : "under 18"}</span>
-                <p style={{border: "1px solid black", borderColor: "white"}}></p>
-                <p>{movie?.overview}</p>
+            <div className='detail-page-genre'>{movie?.genres.map((id,idx)=>(<Badge style={{margin: "0.1rem"}} bg="light" text="dark" key={idx}>{id.name}</Badge>))}</div>
+              <h1 style={{marginTop: "1rem"}}>{movie?.title}</h1>
+              <div className='movie-card-info'>
+                  <span><FontAwesomeIcon icon={faStar} style={{color: "#FFDF00"}} /> {movie?.vote_average} </span>
+                  <span><FontAwesomeIcon icon={faFire} style={{color: "red"}} /> {movie?.popularity}</span>
+                  <span className='card-detail-adult'>{movie?.adult? "over 18" : "under 18"}</span>
+                  <p style={{border: "1px solid black", borderColor: "white"}}></p>
+                  <p>{movie?.overview}</p>
             </div> 
             <p style={{border: "1px solid black", borderColor: "white"}}></p>
 
@@ -46,11 +46,9 @@ const MovieDetailInfo = ({movie, id}) => {
                 <span className='movie-detail-info'>{movie?.runtime}분</span>
               </div>
             </div>
-
             <p style={{border: "1px solid black", borderColor: "white"}}></p>
-
-        </div>
-
+          </div>
+          <Button className='trailer-button'>Trailer</Button>
           </Col>
         </Row>
       </Container>

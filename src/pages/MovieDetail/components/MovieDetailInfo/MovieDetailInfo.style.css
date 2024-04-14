@@ -12,6 +12,24 @@
 .movie-detail-info-all {
     margin-bottom: 1rem;
 }
+.trailer-button {
+    background-color: black !important;
+    border-color: red !important;
+    border-radius: 15px !important ;
+    padding: 0.3rem;
+    color: white !important;
+    font-weight: 600 !important;
+    width: 50%;
+}
+.trailer-button:hover {
+    background-color: red !important;
+    border-color: red !important;
+    border-radius: 15px !important ;
+    padding: 0.3rem;
+    color: white !important;
+    font-weight: 600 !important;
+    width: 50%;
+}
 
 @media screen and (max-width:767px){
     .detail-page-genre {
